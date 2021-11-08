@@ -2,7 +2,13 @@
 
 <img src="https://github.com/jonhan8352/RSAT-install-failed/blob/main/rsat01.JPG">
 
-Due to Windows Update settings by default download and install the tools from WSUS, you will face the installation failed. First of all, you required to disable the WSUS and allow Windows to download the tools directly from Microsoft online server.
+Due to Windows Update settings by default download and install the tools from WSUS, you will face the installation failed.
+
+Launch the terminal service window under Administrator (Run as Administrator).
+
+<img src="https://github.com/jonhan8352/RSAT-install-failed/blob/main/rsat00.jpg">
+
+First of all, you required to disable the WSUS and allow Windows to download the tools directly from Microsoft online server.
 ```
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name "UseWUServer" -Value 0
 ```
