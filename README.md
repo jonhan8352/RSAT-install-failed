@@ -1,0 +1,1 @@
+# RSAT-install-failed
